@@ -28,10 +28,7 @@ Note: a firmware update erases the lens library – re-import the profiles after
 
 ## AF behaviour (`af_optimize`)
 
-`af_optimize` is not documented by Tilta. Observations so far:
-
-- **Viltrox EPIC:** `0` felt too aggressive, `-3` gives smoother transitions.
-- **Sony CineAlta:** left at `0`, but the 85mm felt very slow at `0`.
+`af_optimize` is not documented by Tilta, and its exact effect is still untested. The values used are listed in the table above – feel free to experiment.
 
 The value can be edited in the `.tl` file with any text editor before importing.
 

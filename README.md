@@ -1,5 +1,11 @@
 # Tilta Lens Profiles
 
+[![Viltrox](https://img.shields.io/badge/Viltrox-EPIC%201.33x-e05d44)](https://github.com/ZClassified/tilta-lens-profiles/releases/tag/v1.0.0)
+[![Sony](https://img.shields.io/badge/Sony-CineAlta-555555?labelColor=000000)](https://github.com/ZClassified/tilta-lens-profiles/releases/tag/v1.1.0)
+
+![Adapter](https://img.shields.io/badge/Adapter-Nucleus%20AF%20(E%20to%20PL)-007ec6)
+![Firmware](https://img.shields.io/badge/Firmware-1.8.6-2ea44f)
+
 Lens profiles (`.tl`) for the **Tilta Nucleus Auto Focus Adapter – Dual Nano II Motor Kit (E to PL)**.
 Created and tested on firmware **1.8.6**.
 

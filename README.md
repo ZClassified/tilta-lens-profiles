@@ -13,7 +13,7 @@ Created and tested on firmware **1.8.6**.
 
 | Lens                                         | Folder     | Files                                                                       | Unit   | `af_optimize` |
 |----------------------------------------------|------------|-----------------------------------------------------------------------------|--------|---------------|
-| Viltrox EPIC 35 / 50 / 75mm 1.33x            | `VILTROX/` | `EPIC_35.tl`, `EPIC_50.tl`, `EPIC_75.tl`                                    | feet   | `-3`          |
+| Viltrox EPIC 35 / 50 / 75mm 1.33x            | `VILTROX/` | `EPIC_35.tl`, `EPIC_50.tl`, `EPIC_75.tl`                                    | feet   | `0`           |
 | Sony CineAlta MK1 35 / 50 / 85mm, MK2 25mm   | `SONY_M/`  | `CINEALTA_MK1_35_M.tl`, `CINEALTA_MK1_50_M.tl`, `CINEALTA_MK1_85_M.tl`, `CINEALTA_MK2_25_M.tl` | metric | `0`           |
 
 Lenses with both metric and imperial marks get separate folders (`_M` / `_FT`) – copy only the one you want.
@@ -26,11 +26,13 @@ Lenses with both metric and imperial marks get separate folders (`_M` / `_FT`) �
 
 Note: a firmware update erases the lens library – re-import the profiles afterwards.
 
-## AF behaviour (`af_optimize`)
+## AF Fine-Tuning (`af_optimize`)
 
-`af_optimize` is not documented by Tilta, and its exact effect is still untested. The values used are listed in the table above – feel free to experiment.
+`af_optimize` acts as **AF Micro-Adjustment / Autofocus Fine-Tuning** (trim offset):
 
-The value can be edited in the `.tl` file with any text editor before importing.
+- **Purpose:** When the camera confirms focus (green AF indicator), but the physical focus on the sensor is slightly off (front-focus or back-focus due to lens shimming, adapter flange focal distance tolerances, or gear backlash), this parameter applies a fine offset to the focus motor position.
+- **Default value (`0`):** `0` represents neutral (no offset applied). 99 of 100 factory presets in Tilta's official firmware default to `0`. All profiles in this repository use `0` as the baseline.
+- **Custom adjustments:** If your specific lens copy or camera body exhibits slight front-focus or back-focus, you can adjust `af_optimize` in the `.tl` file before importing, or modify it directly in the adapter's Easy Edit menu. The active offset is also shown on the adapter status screen as `AF:<value>`.
 
 ## License
 
